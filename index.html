@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>mojicnv - 文字変換ツール群</title>
+</head>
+<body>
+
+<h1>mojicnv - 文字変換ツール群</h1>
+
+<section>
+<h2>半角カナ←→全角カナ</h2>
+<textarea id=hankana></textarea>
+<textarea id=zenkana></textarea>
+</section>
+
+<script type="module">
+import { HankakuKana } from "https://code4fukui.github.io/mojikiban/HankakuKana.js";
+
+hankana.onchange = () => zenkana.value = HankakuKana.toZen(hankana.value);
+zenkana.onchange = () => hankana.value = HankakuKana.toHan(zenkana.value);
+</script>
+
+<section>
+<h2>全角アルファベット（全角記号英数）←→半角アルファベット（半角記号英数）</h2>
+<textarea id=zenalpha></textarea>
+<textarea id=hanalpha></textarea>
+</section>
+  
+<script type="module">
+import { ZenkakuAlpha } from "https://code4fukui.github.io/mojikiban/ZenkakuAlpha.js";
+
+hanalpha.onchange = () => zenalpha.value = ZenkakuAlpha.toZen(hanalpha.value);
+zenalpha.onchange = () => hanalpha.value = ZenkakuAlpha.toHan(zenalpha.value);
+</script>
+
+<br><br>
+<a href=https://github.com/code4fukui/>HankakuKana.js / ZenkakuAlpha.js - mojikiban by Code for FUKUI</a><br>
+
+<style>
+body {
+  text-align: center;
+}
+textarea {
+  width: 45%;
+  height: 10em;
+}
+a {
+  color: gray !important;
+}
+</style>
+
+</body>
+</html>
