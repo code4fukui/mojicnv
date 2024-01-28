@@ -12,7 +12,6 @@ import { HankakuKana } from "https://code4fukui.github.io/mojikiban/HankakuKana.
 hankana.onchange = () => zenkana.value = HankakuKana.toZen(hankana.value);
 zenkana.onchange = () => hankana.value = HankakuKana.toHan(zenkana.value);
 ```
-</script>
 
 ### 全角アルファベット（全角記号英数）←→半角アルファベット（半角記号英数）
 
