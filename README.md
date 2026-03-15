@@ -1,5 +1,7 @@
 # mojicnv
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A set of character conversion tools.
 
 ## Demo
