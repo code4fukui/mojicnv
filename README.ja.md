@@ -1,17 +1,17 @@
 # mojicnv
 
-A set of character conversion tools.
+文字変換ツールのコレクションです。半角カナと全角カナ、全角アルファベットと半角アルファベットの相互変換が可能です。
 
-## Demo
+## デモ
 https://code4fukui.github.io/mojicnv/
 
-## Features
-- Convert between half-width and full-width kana characters
-- Convert between half-width and full-width alphanumeric characters and symbols
+## 機能
+- 半角カナと全角カナの変換
+- 全角アルファベットと半角アルファベットの変換
 
-## Usage
+## 使い方
 
-### Half-Width Kana ↔ Full-Width Kana
+### 半角カナ⇔全角カナ
 
 ```js
 import { HankakuKana } from "https://code4fukui.github.io/mojikiban/HankakuKana.js";
@@ -20,7 +20,7 @@ hankana.onchange = () => zenkana.value = HankakuKana.toZen(hankana.value);
 zenkana.onchange = () => hankana.value = HankakuKana.toHan(zenkana.value);
 ```
 
-### Full-Width Alphabet (Full-Width Symbols) ↔ Half-Width Alphabet (Half-Width Symbols)
+### 全角アルファベット⇔半角アルファベット
 
 ```js
 import { ZenkakuAlpha } from "https://code4fukui.github.io/mojikiban/ZenkakuAlpha.js";
@@ -29,5 +29,5 @@ hanalpha.onchange = () => zenalpha.value = ZenkakuAlpha.toZen(hanalpha.value);
 zenalpha.onchange = () => hanalpha.value = ZenkakuAlpha.toHan(zenalpha.value);
 ```
 
-## License
-MIT License
+## ライセンス
+MIT
