@@ -8,7 +8,7 @@ This project serves as a practical demonstration of the `HankakuKana.js` and `Ze
 
 ## Demo
 
-**https://code4fukui.github.io/mojicnv/**
+**https://github.com/code4fukui/mojicnv
 
 ## Features
 

@@ -6,7 +6,7 @@
 
 ## デモ
 
-**https://code4fukui.github.io/mojicnv/**
+**https://github.com/code4fukui/mojicnv
 
 ## 機能
 
